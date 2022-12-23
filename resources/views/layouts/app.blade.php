@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"/>
 </head>
-<body>
+<body style="background: @if(Route::current() == 'index') #1275d7; @else #f3f3f3 @endif">
     @yield('content')
     <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
